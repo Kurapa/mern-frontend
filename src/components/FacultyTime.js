@@ -10,7 +10,7 @@ export default function FacultyTime() {
     return <FacultyListTime obj={val}/>
     })
     }
-    axios.get(`http://localhost:5000/faculty-route/time/${id}`)
+    axios.get(`https://mern-backend-server-kurapa.onrender.com/faculty-route/time/${id}`)
     .then((res)=>{
        setInfo(res.data)
        return

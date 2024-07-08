@@ -6,7 +6,7 @@ export default function StudentDetails() {
 
    const {id,name,regno}=useParams();
    const [info,setInfo]=useState({})
-    axios.get(`http://localhost:5000/content/info/${Number(id)}`)
+    axios.get(`https://mern-backend-server-kurapa.onrender.com/content/info/${Number(id)}`)
     .then((res)=>{
        setInfo(res.data)
     })

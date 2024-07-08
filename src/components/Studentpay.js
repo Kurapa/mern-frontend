@@ -12,7 +12,7 @@ export default function Studentpay() {
     return <StudentListpay obj={val}/>
     })
     }
-    axios.get(`http://localhost:5000/content/pay/${Number(id)}`)
+    axios.get(`https://mern-backend-server-kurapa.onrender.com/content/pay/${Number(id)}`)
     .then((res)=>{
        setInfo(res.data)
        return

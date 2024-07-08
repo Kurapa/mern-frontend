@@ -6,7 +6,7 @@ export default function FacultyDetails() {
 
    const {id,name,regno}=useParams();
    const [info,setInfo]=useState({})
-    axios.get(`http://localhost:5000/faculty-route/info/${id}`)
+    axios.get(`https://mern-backend-server-kurapa.onrender.com/faculty-route/info/${id}`)
     .then((res)=>{
        setInfo(res.data)
     })

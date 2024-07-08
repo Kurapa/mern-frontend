@@ -27,7 +27,7 @@ export function FacultyListMarks(props){
         console.log(props.fid,name,mark)
         const id=props.fid
 
-        Axios.delete(`http://localhost:5000/faculty-route/marks-delete/${id}/${name}/${mark}`)
+        Axios.delete(`https://mern-backend-server-kurapa.onrender.com/faculty-route/marks-delete/${id}/${name}/${mark}`)
             .then((res)=>{
             if(res.status === 200){
             alert("Record is deleted");

@@ -15,7 +15,7 @@ export default function StudentLogin() {
   }
     function handlesubmit(event){
         event.preventDefault();
-        Axios.post("http://localhost:5000/route/login",arr)
+        Axios.post("https://mern-backend-server-kurapa.onrender.com/route/login",arr)
         .then((res)=>{
             if(res.data.msg==='fail'){
                 alert("incorrect username or password")

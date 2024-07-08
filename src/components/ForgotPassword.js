@@ -13,7 +13,7 @@ const data={
   }
 function handleclick(){
   if(newpassword===password){
-  Axios.put("http://localhost:5000/route/forgotpassword",data)
+  Axios.put("https://mern-backend-server-kurapa.onrender.com/route/forgotpassword",data)
   .then((res)=>{
       if(res.data.msg==="success"){
         alert("password is updated")

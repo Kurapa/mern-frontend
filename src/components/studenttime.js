@@ -11,7 +11,7 @@ export default function StudenntTime() {
     return <StudentListTime obj={val}/>
     })
     }
-    axios.get(`http://localhost:5000/content/time/${Number(id)}`)
+    axios.get(`https://mern-backend-server-kurapa.onrender.com/content/time/${Number(id)}`)
     .then((res)=>{
        setInfo(res.data)
        return

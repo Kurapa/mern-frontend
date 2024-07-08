@@ -13,7 +13,7 @@ export default function FacultyForgotpassword() {
     console.log(regNo)
     function handleclick(){
       if(newpassword===password){
-      Axios.put("http://localhost:5000/faculty-route/forgotpassword",data)
+      Axios.put("https://mern-backend-server-kurapa.onrender.com/faculty-route/forgotpassword",data)
       .then((res)=>{
           if(res.data.msg==="success"){
             alert("password is updated")

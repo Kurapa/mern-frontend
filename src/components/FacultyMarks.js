@@ -20,7 +20,7 @@ export default function FacultyMarks() {
     })
     }
     
-    Axios.get(`http://localhost:5000/faculty-route/marks/${Number(id)}`)
+    Axios.get(`https://mern-backend-server-kurapa.onrender.com/faculty-route/marks/${Number(id)}`)
     .then((res)=>{
        setInfo(res.data)
        return
@@ -30,7 +30,7 @@ export default function FacultyMarks() {
     })
 
     function handleclick(){
-      Axios.post(`http://localhost:5000/faculty-route/marks-upload/${id}`,uploadData)
+      Axios.post(`https://mern-backend-server-kurapa.onrender.com/faculty-route/marks-upload/${id}`,uploadData)
       .then((res)=>{
        console.log(res.data)
       })
