@@ -1,0 +1,81 @@
+.form-floating{
+    position: relative;
+}
+#iconsEnvelope{
+    position: absolute;
+    top: calc(20%);
+    left: 1.25rem;
+    font-size:large;
+    z-index: 3;
+}
+#icons{
+    position: absolute;
+    top: calc(30%);
+    left: 1.25rem;
+    font-size:large;
+    z-index: 3;
+}
+.form-floating label ,.form-floating .form-control{
+    left: .5rem;
+    padding-left: 2.5rem;
+}
+#studentheading{
+    color: #3e8383;
+}
+#facultyheading{
+    color: darkblue;
+}
+#forgotHeading{
+    color: darkblue;
+}
+#ParentTextColor{
+    color: rgb(25,135,84);
+}
+#StudentTextColor{
+    color: rgb(13, 202, 240);
+}
+#FacultyTextColor{
+    color: rgb(13,110,253);
+}
+#StudentBack:hover{
+    cursor: pointer;
+    background-color: rgb(13, 202, 240);
+}
+#StudentBack:active{
+    opacity: 0.6;
+}
+#ParentBack:active{
+    opacity: 0.6;
+}
+#FacultyBack:active{
+    opacity: 0.6;
+}
+#StudentBack:hover #StudentTextColor,#box-text{
+    color: white;
+}
+#ParentBack:hover{
+    cursor: pointer;
+    background-color: rgb(25,135,84);
+}
+#ParentBack:hover #ParentTextColor{
+    color: white;
+}
+#FacultyBack:hover{
+    cursor: pointer;
+    background-color: rgb(13,110,253);
+}
+#FacultyBack:hover #FacultyTextColor{
+    color: white;
+}
+#PortalLogIn:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.2)
+}
+#PortalLogIn:active{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.1)
+}
+#UpdatingPassword:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.2)
+}
+#UpdatingPassword:active{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.1)
+}
